@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.cart, .user {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+}
+
+#cartIcon {
+    margin-right: 10px;
+}
+
+#cartItemCount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff5555;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.logout-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logout-popup p {
+    margin-bottom: 20px;
+}
+
+.logout-popup button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.logout-popup button:hover {
+    background-color: #555;
+}
