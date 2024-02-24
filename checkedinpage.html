@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkedinpage.css">
+</head>
+<body>
+<div class="checkout-container">
+    <h1>Checkout</h1>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="checkout-summary">
+        <p>Total: $<span id="totalAmount">0.00</span></p>
+        <button onclick="placeOrder()">Checkout</button>
+    </div>
+    <div class="order-confirmation" id="orderConfirmation">
+        <p>Order placed successfully!</p>
+        <button onclick="redirectToDashboard()">Continue Shopping</button>
+    </div>
+</div>
+
+<script src="checkedinpage.js" defer></script>
+
+</body>
+</html>
